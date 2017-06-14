@@ -12,6 +12,8 @@ export DIR_WORKING=
 export ID_FS_LABEL=${ID_FS_LABEL:-}
 export ID_FS_UUID=${ID_FS_UUID:-}
 export UMASK=${UMASK:-$(umask)}
+export LIBBDPLUS_PATH=/usr/lib64/libmmbd.so.0
+export LIBAACS_PATH=/usr/lib64/libmmbd.so.0
 
 # Set false booleans to null for fancy bash tricks in rip.sh.
 if [ "$DEBUG" != "true" ]; then DEBUG=; fi
