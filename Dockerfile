@@ -7,7 +7,7 @@ RUN dnf update -qy && \
         https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm \
     && \
     dnf config-manager --add-repo=http://negativo17.org/repos/fedora-multimedia.repo && \
-    dnf install -qy dnf-plugins-core sudo makemkv libaacs libbdplus libdvdcss && \
+    dnf install -qy dnf-plugins-core sudo makemkv libbdplus libdvdcss && \
     dnf clean all && \
     sudo useradd -s /sbin/nologin -G cdrom mkv && \
     sudo -u mkv mkdir /home/mkv/.MakeMKV
